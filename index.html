@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precious Hair and Beauty Salon Limited | Hair & Beauty Services in Croydon</title>
+  <meta name="description" content="Precious Hair and Beauty Salon Limited is a local hair and beauty salon based at 35 Church Street, Waddon, Croydon, England CR0 1RH, offering professional hair styling, beauty care and salon services." />
+  <meta name="keywords" content="Precious Hair and Beauty Salon Limited, hair salon Croydon, beauty salon Croydon, Waddon salon, hair styling, beauty treatments" />
+  <meta name="author" content="PRECIOUS HAIR AND BEAUTY SALON LIMITED" />
+  <meta property="og:title" content="Precious Hair and Beauty Salon Limited" />
+  <meta property="og:description" content="Professional hair and beauty services in Croydon, England." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="theme-color" content="#6b3f4f" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236b3f4f'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='34' font-weight='700' fill='%23f9e8df'%3EP%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --plum: #6b3f4f;
+      --plum-dark: #3f2430;
+      --rose: #c58c93;
+      --cream: #fff7f1;
+      --sand: #f3e3da;
+      --ink: #24191d;
+      --muted: #725f66;
+      --white: #ffffff;
+      --shadow: 0 22px 60px rgba(63, 36, 48, 0.16);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .topbar {
+      background: var(--plum-dark);
+      color: #f9e8df;
+      font-size: 14px;
+      padding: 9px 24px;
+      text-align: center;
+      letter-spacing: .01em;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(255, 247, 241, 0.88);
+      border-bottom: 1px solid rgba(107, 63, 79, 0.12);
+    }
+
+    .nav {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -.03em;
+      color: var(--plum-dark);
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--plum), var(--rose));
+      color: var(--cream);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 12px 30px rgba(107, 63, 79, .25);
+      font-weight: 900;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .menu a:hover { color: var(--plum); }
+
+    .nav-cta, .btn-primary, .btn-secondary {
+      border: 0;
+      border-radius: 999px;
+      padding: 13px 19px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 15px;
+    }
+
+    .nav-cta, .btn-primary {
+      background: var(--plum);
+      color: var(--white);
+      box-shadow: 0 14px 28px rgba(107, 63, 79, .22);
+    }
+
+    .btn-secondary {
+      background: rgba(107, 63, 79, .1);
+      color: var(--plum-dark);
+    }
+
+    .nav-cta:hover, .btn-primary:hover, .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 38px rgba(107, 63, 79, .25);
+    }
+
+    .mobile-toggle {
+      display: none;
+      border: none;
+      background: rgba(107, 63, 79, .1);
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      color: var(--plum-dark);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .hero {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 76px 0 44px;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(197, 140, 147, .2);
+      color: var(--plum-dark);
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: .96;
+      letter-spacing: -.07em;
+      margin: 20px 0 24px;
+      color: var(--plum-dark);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 19px;
+      max-width: 610px;
+      margin: 0 0 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 620px;
+    }
+
+    .trust-card {
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(107, 63, 79, .12);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 10px 25px rgba(63, 36, 48, .06);
+    }
+
+    .trust-card strong {
+      display: block;
+      color: var(--plum-dark);
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+
+    .trust-card span { color: var(--muted); font-size: 13px; }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+    }
+
+    .photo-card {
+      position: absolute;
+      overflow: hidden;
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      border: 8px solid rgba(255,255,255,.75);
+      background: var(--sand);
+    }
+
+    .photo-card img { width: 100%; height: 100%; object-fit: cover; }
+    .photo-main { inset: 0 0 62px 70px; }
+    .photo-small { width: 48%; height: 220px; left: 0; bottom: 0; }
+
+    .floating-note {
+      position: absolute;
+      right: 22px;
+      bottom: 22px;
+      background: var(--white);
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      max-width: 260px;
+      border: 1px solid rgba(107, 63, 79, .12);
+    }
+
+    .floating-note strong { color: var(--plum-dark); display: block; margin-bottom: 5px; }
+    .floating-note span { color: var(--muted); font-size: 14px; }
+
+    section { padding: 74px 0; }
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1;
+      letter-spacing: -.05em;
+      color: var(--plum-dark);
+      max-width: 660px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 420px;
+      margin: 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .about-panel, .service-card, .testimonial, .contact-card, .policy-content {
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(107, 63, 79, .12);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 45px rgba(63, 36, 48, .08);
+    }
+
+    .about-panel { padding: 34px; }
+    .about-panel h3 { color: var(--plum-dark); margin-top: 0; font-size: 28px; line-height: 1.1; }
+    .about-panel p { color: var(--muted); margin-bottom: 18px; }
+
+    .about-image {
+      min-height: 430px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .about-image img { width: 100%; height: 100%; object-fit: cover; }
+
+    .badge-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .badge-list span {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(107, 63, 79, .08);
+      color: var(--plum-dark);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .services {
+      background: linear-gradient(180deg, rgba(243, 227, 218, .72), rgba(255, 247, 241, 1));
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card { overflow: hidden; }
+    .service-card img { height: 210px; width: 100%; object-fit: cover; }
+    .service-body { padding: 24px; }
+    .service-body h3 { margin: 0 0 10px; color: var(--plum-dark); font-size: 22px; }
+    .service-body p { margin: 0; color: var(--muted); }
+
+    .gallery-strip {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr 1fr .8fr;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .gallery-strip img {
+      height: 270px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: 0 14px 35px rgba(63, 36, 48, .12);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .testimonial { padding: 26px; }
+    .stars { color: #a66b26; letter-spacing: 3px; margin-bottom: 14px; }
+    .testimonial p { color: var(--muted); margin: 0 0 18px; }
+    .testimonial strong { color: var(--plum-dark); }
+
+    .contact {
+      background: var(--plum-dark);
+      color: var(--white);
+    }
+
+    .contact .section-heading h2, .contact .section-heading p { color: var(--white); }
+    .contact .section-heading p { opacity: .78; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.14);
+      padding: 30px;
+      color: var(--white);
+    }
+
+    .contact-card h3 { margin-top: 0; font-size: 25px; }
+    .contact-item { padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .contact-item span { display: block; font-size: 13px; opacity: .66; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 3px; }
+    .contact-item strong { white-space: pre-line; }
+
+    .contact-form {
+      display: grid;
+      gap: 13px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.1);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 15px 16px;
+      font: inherit;
+      outline: none;
+    }
+
+    input::placeholder, textarea::placeholder { color: rgba(255,255,255,.62); }
+    select option { color: var(--ink); }
+    textarea { min-height: 130px; resize: vertical; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+    .form-note { font-size: 13px; opacity: .7; margin: 8px 0 0; }
+
+    footer {
+      background: #21141a;
+      color: rgba(255,255,255,.78);
+      padding: 44px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    footer h4 { color: var(--white); margin: 0 0 12px; }
+    footer p, footer address { margin: 0; font-style: normal; white-space: pre-line; }
+    .footer-links { display: grid; gap: 10px; }
+    .footer-links button {
+      text-align: left;
+      border: 0;
+      background: transparent;
+      color: rgba(255,255,255,.78);
+      padding: 0;
+      cursor: pointer;
+      font: inherit;
+    }
+    .footer-links button:hover { color: var(--white); }
+    .copyright { padding-top: 20px; font-size: 14px; }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(33, 20, 26, .72);
+    }
+    .modal.active { display: flex; }
+    .modal-box {
+      width: min(920px, 100%);
+      max-height: 86vh;
+      overflow: auto;
+      background: var(--cream);
+      color: var(--ink);
+      border-radius: 26px;
+      box-shadow: 0 35px 90px rgba(0,0,0,.35);
+      padding: 30px;
+      position: relative;
+    }
+    .modal-close {
+      position: sticky;
+      top: 0;
+      float: right;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 0;
+      background: var(--plum);
+      color: var(--white);
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .policy-content { padding: 24px; margin-top: 18px; }
+    .policy-content h3 { color: var(--plum-dark); margin-bottom: 8px; }
+    .policy-content p, .policy-content li { color: var(--muted); }
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 300;
+      background: var(--white);
+      color: var(--plum-dark);
+      border: 1px solid rgba(107, 63, 79, .12);
+      border-radius: 18px;
+      padding: 14px 18px;
+      box-shadow: var(--shadow);
+      display: none;
+      max-width: 340px;
+    }
+    .toast.show { display: block; }
+
+    @media (max-width: 900px) {
+      .mobile-toggle { display: grid; place-items: center; }
+      .menu {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 78px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background: var(--white);
+        border-radius: 22px;
+        padding: 18px;
+        box-shadow: var(--shadow);
+      }
+      .menu.open { display: flex; }
+      .nav-cta { width: 100%; }
+      .hero, .about-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 46px; }
+      .hero-visual { min-height: 450px; }
+      .photo-main { inset: 0 0 60px 40px; }
+      .service-grid, .testimonials-grid { grid-template-columns: 1fr; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 14px; }
+      .gallery-strip { grid-template-columns: 1fr 1fr; }
+      .trust-row { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .topbar { font-size: 12px; padding-inline: 14px; }
+      .nav, .container, .hero { width: min(100% - 28px, 1180px); }
+      .brand span:last-child { display: none; }
+      .hero-visual { min-height: 390px; }
+      .photo-main { inset: 0 0 74px 0; }
+      .photo-small { display: none; }
+      .floating-note { left: 14px; right: 14px; bottom: 0; max-width: none; }
+      .hero h1 { font-size: 42px; }
+      section { padding: 54px 0; }
+      .form-row, .gallery-strip { grid-template-columns: 1fr; }
+      .gallery-strip img { height: 230px; }
+      .modal-box { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Professional hair and beauty services in Croydon • Registered in England and Wales • Company Number 10682763</div>
+
+  <header>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Precious Hair and Beauty Salon Limited home">
+        <span class="brand-mark">P</span>
+        <span>Precious Hair & Beauty</span>
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+      <div class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="mailto:contact@tubeworld.site">Book an enquiry</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Local salon in Croydon</span>
+        <h1>Hair and beauty care with a personal touch.</h1>
+        <p>Precious Hair and Beauty Salon Limited provides friendly, professional salon services for clients who want polished hair, confident styling and a relaxed beauty experience in the Croydon area.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#contact">Contact the salon</a>
+          <a class="btn-secondary" href="#services">View services</a>
+        </div>
+        <div class="trust-row" aria-label="Salon highlights">
+          <div class="trust-card"><strong>2017</strong><span>Company incorporated</span></div>
+          <div class="trust-card"><strong>Croydon</strong><span>Based in England</span></div>
+          <div class="trust-card"><strong>Care</strong><span>Hair and beauty focused</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Salon photography collage">
+        <div class="photo-card photo-main">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Professional hair salon chair and mirror" />
+        </div>
+        <div class="photo-card photo-small">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Hair stylist working in a beauty salon" />
+        </div>
+        <div class="floating-note">
+          <strong>Relaxed, professional appointments</strong>
+          <span>Designed for everyday confidence, special occasions and consistent personal care.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <h2>A welcoming salon experience built around real people.</h2>
+          <p>Our approach is simple: listen carefully, work professionally and help each client leave feeling refreshed, confident and cared for.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=80" alt="Beautiful finished hairstyle in salon lighting" />
+          </div>
+          <div class="about-panel">
+            <h3>About Precious Hair and Beauty Salon Limited</h3>
+            <p>PRECIOUS HAIR AND BEAUTY SALON LIMITED is a private limited company registered in England and Wales. The salon is connected to the Croydon community and focuses on practical, dependable hair and beauty services for local clients.</p>
+            <p>From a routine refresh to a complete style update, the team aims to make the process calm, clear and comfortable from the first enquiry through to the finished look.</p>
+            <div class="badge-list">
+              <span>Hair styling</span>
+              <span>Beauty care</span>
+              <span>Consultation-led service</span>
+              <span>Croydon based</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Salon services for everyday beauty and special moments.</h2>
+          <p>Service availability can vary by appointment, so clients are encouraged to contact the salon directly for current options and booking details.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80" alt="Hair styling tools and salon workspace" />
+            <div class="service-body">
+              <h3>Hair Styling</h3>
+              <p>Clean, polished styling for daily confidence, events, appointments and occasions where your hair needs to look its best.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=80" alt="Beauty products arranged on a counter" />
+            <div class="service-body">
+              <h3>Beauty Care</h3>
+              <p>Thoughtful beauty services delivered in a calm environment, with attention to personal comfort and presentation.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=900&q=80" alt="Salon wash basin and styling area" />
+            <div class="service-body">
+              <h3>Consultations</h3>
+              <p>Friendly guidance before your appointment so your style, treatment or beauty service is aligned with what you need.</p>
+            </div>
+          </article>
+        </div>
+        <div class="gallery-strip" aria-label="Salon gallery">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80" alt="Hairdresser cutting hair" />
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80" alt="Beauty treatment room" />
+          <img src="https://images.unsplash.com/photo-1571646034647-52e6ea84b28c?auto=format&fit=crop&w=900&q=80" alt="Hair care products in salon" />
+          <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=900&q=80" alt="Modern salon interior" />
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <h2>What clients value most.</h2>
+          <p>These sample reviews reflect the kind of local, service-led experience the salon is designed to provide.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>“A warm and professional salon visit. I felt listened to and left with a style that looked natural and tidy.”</p>
+            <strong>— Amara, Croydon</strong>
+          </article>
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>“Friendly service, good attention to detail and a relaxed atmosphere. Exactly what I wanted from a local salon.”</p>
+            <strong>— Denise, Waddon</strong>
+          </article>
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>“The appointment felt personal and unrushed. I would recommend it to anyone looking for reliable beauty care.”</p>
+            <strong>— Michelle, South London</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contact the salon.</h2>
+          <p>Send an enquiry for appointments, availability, service questions or general information.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Business details</h3>
+            <div class="contact-item"><span>Company</span><strong>PRECIOUS HAIR AND BEAUTY SALON LIMITED</strong></div>
+            <div class="contact-item"><span>Company number</span><strong>10682763</strong></div>
+            <div class="contact-item"><span>Registered office address</span><strong>35 CHURCH STREET
+WADDON
+CROYDON
+ENGLAND
+CR0 1RH</strong></div>
+            <div class="contact-item"><span>Phone</span><strong>Not provided in official company documents</strong></div>
+            <div class="contact-item"><span>Email</span><strong>contact@tubeworld.site</strong></div>
+          </div>
+          <div class="contact-card">
+            <h3>Send a message</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Your name" required />
+                <input type="email" name="email" placeholder="Your email" required />
+              </div>
+              <select name="service" aria-label="Service interest">
+                <option value="">Select a service interest</option>
+                <option>Hair styling</option>
+                <option>Beauty care</option>
+                <option>Consultation</option>
+                <option>General enquiry</option>
+              </select>
+              <textarea name="message" placeholder="Tell us what you need" required></textarea>
+              <button class="btn-primary" type="submit">Send enquiry</button>
+              <p class="form-note">This form opens your email client with the message details. No information is stored on this page.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>PRECIOUS HAIR AND BEAUTY SALON LIMITED</h4>
+          <p>Local hair and beauty services based in Croydon, England.</p>
+        </div>
+        <div>
+          <h4>Official company information</h4>
+          <p>Legal name: PRECIOUS HAIR AND BEAUTY SALON LIMITED
+Company number: 10682763
+Phone: Not provided in official company documents
+E-mail: contact@tubeworld.site</p>
+        </div>
+        <div>
+          <h4>Registered office address</h4>
+          <address>35 CHURCH STREET
+WADDON
+CROYDON
+ENGLAND
+CR0 1RH</address>
+          <div class="footer-links" style="margin-top:14px;">
+            <button type="button" data-modal="privacyModal">Privacy Policy</button>
+            <button type="button" data-modal="termsModal">Terms of Use</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2026 PRECIOUS HAIR AND BEAUTY SALON LIMITED - All rights reserved</div>
+    </div>
+  </footer>
+
+  <div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close privacy policy">×</button>
+      <h2 id="privacyTitle">Privacy Policy</h2>
+      <p>Last updated: 2026</p>
+      <div class="policy-content">
+        <h3>Company details</h3>
+        <p><strong>Legal name:</strong> PRECIOUS HAIR AND BEAUTY SALON LIMITED<br><strong>Company number:</strong> 10682763<br><strong>Registered office address:</strong><br>35 CHURCH STREET<br>WADDON<br>CROYDON<br>ENGLAND<br>CR0 1RH<br><strong>Email:</strong> contact@tubeworld.site<br><strong>Phone:</strong> Not provided in official company documents</p>
+        <h3>Information we may receive</h3>
+        <p>When a visitor contacts us, we may receive the name, email address, selected service interest and message provided voluntarily through the enquiry form or by email.</p>
+        <h3>How information is used</h3>
+        <p>Information is used to respond to enquiries, provide appointment-related communication, answer service questions and maintain basic business records where required.</p>
+        <h3>Data sharing</h3>
+        <p>We do not sell personal information. Information may only be shared where necessary to operate the business, comply with legal obligations or respond to a lawful request.</p>
+        <h3>Cookies and analytics</h3>
+        <p>This single-page site does not require cookies to function. If analytics or booking tools are added in the future, visitors should be informed clearly about their use.</p>
+        <h3>Your rights</h3>
+        <p>You may contact us to request access, correction or deletion of personal information where applicable under UK data protection law.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="termsModal" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close terms of use">×</button>
+      <h2 id="termsTitle">Terms of Use</h2>
+      <p>Last updated: 2026</p>
+      <div class="policy-content">
+        <h3>Business identity</h3>
+        <p>This website is operated for PRECIOUS HAIR AND BEAUTY SALON LIMITED, Company number 10682763, with registered office address:<br>35 CHURCH STREET<br>WADDON<br>CROYDON<br>ENGLAND<br>CR0 1RH</p>
+        <h3>Website purpose</h3>
+        <p>The website provides general information about local hair and beauty services and allows visitors to make enquiries. Information on the website should not be treated as a guaranteed appointment, quote or service confirmation.</p>
+        <h3>Appointments and enquiries</h3>
+        <p>Submitting an enquiry does not automatically create a booking. Appointment times, availability, service suitability and pricing should be confirmed directly with the salon.</p>
+        <h3>Content accuracy</h3>
+        <p>We aim to keep business information accurate and clear. Service descriptions are general and may change depending on staff availability, customer requirements and operational needs.</p>
+        <h3>Responsible use</h3>
+        <p>Visitors must not misuse this website, attempt to disrupt its operation or submit false, abusive or unlawful content through any contact channel.</p>
+        <h3>Contact</h3>
+        <p>For questions about these terms, contact: contact@tubeworld.site</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Your email client should open with the enquiry details.</div>
+
+  <script>
+    const menu = document.getElementById('menu');
+    const mobileToggle = document.getElementById('mobileToggle');
+    mobileToggle.addEventListener('click', () => menu.classList.toggle('open'));
+    document.querySelectorAll('.menu a').forEach(link => link.addEventListener('click', () => menu.classList.remove('open')));
+
+    document.querySelectorAll('[data-modal]').forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = document.getElementById(button.dataset.modal);
+        modal.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', event => {
+        if (event.target === modal || event.target.classList.contains('modal-close')) {
+          modal.classList.remove('active');
+        }
+      });
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        document.querySelectorAll('.modal.active').forEach(modal => modal.classList.remove('active'));
+      }
+    });
+
+    const contactForm = document.getElementById('contactForm');
+    const toast = document.getElementById('toast');
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const data = new FormData(contactForm);
+      const subject = encodeURIComponent('Salon enquiry - Precious Hair and Beauty');
+      const body = encodeURIComponent(
+        'Name: ' + data.get('name') + '\n' +
+        'Email: ' + data.get('email') + '\n' +
+        'Service interest: ' + (data.get('service') || 'Not selected') + '\n\n' +
+        'Message:\n' + data.get('message')
+      );
+      window.location.href = 'mailto:contact@tubeworld.site?subject=' + subject + '&body=' + body;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 4200);
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
